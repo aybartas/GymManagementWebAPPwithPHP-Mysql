@@ -1,0 +1,258 @@
+CREATE schema IF NOT EXISTS `Gym_Management`; 
+-- CREATE DATABASE IF NOT EXISTS `deneme_aybar2`; 
+
+
+create table IF NOT EXISTS `System_User`(
+	UsernameID varchar(50) NOT NULL PRIMARY KEY,
+    `Name` varchar(50), 
+    Surname varchar(50), 
+    StartDate datetime DEFAULT CURRENT_TIMESTAMP,
+    EndDate datetime,
+    `Password` varchar(255),
+    Photo varchar(260)
+    );
+     
+    
+CREATE table IF NOT EXISTS Trainer(
+	UsernameID varchar(50) not null,  
+    Salary float,
+    GraduatedSchool varchar(50),
+    Experience int,
+    satisfaction_rating int,
+    Weight int,
+    Length int,
+    foreign key(UsernameID) references system_user(UsernameID) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(UsernameID )
+    );
+
+
+    
+create table IF NOT EXISTS Membership_Type(
+	`Name` varchar(50) NOT NULL, 
+    price float,
+    primary key(Name));
+
+
+    
+create table IF NOT EXISTS Customer(
+	UsernameID varchar(50) not null, 
+    MembershipTypeName varchar(100),
+    TrainerID varchar(50), 
+    Weight float, 
+    Length float, 
+    Age int, 
+    FatRatio float, 
+    CreditCardNumber varchar(16) not null, 
+    CreditCardExpireDate datetime not null,
+    foreign key(MembershipTypeName) references Membership_Type(`Name`) ON DELETE SET NULL ON UPDATE CASCADE,
+    foreign key(TrainerID) references Trainer(UsernameID) ON DELETE SET NULL ON UPDATE CASCADE,
+    foreign key(UsernameID) references system_user(UsernameID) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(UsernameID));
+    
+    
+    
+create table IF NOT EXISTS Request_Program(
+	ID int NOT NULL AUTO_INCREMENT,
+    UsernameID varchar(50) NOT NULL,
+    Description varchar(500),
+    RequestDate datetime DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (ID),
+    foreign key(UsernameID) references Customer(UsernameID) on delete cascade on update cascade
+);
+
+
+
+
+create table IF NOT EXISTS Program(
+	`Name` varchar(50),
+    bmi float,
+    primary key(`Name`)
+    );
+
+create table IF NOT EXISTS Exercise(
+	`Name` varchar(100) not null primary key,
+	`Set` int,
+    RepetitionPerSet int
+    );
+    
+create table IF NOT EXISTS Consist_Of(
+	ProgramName varchar(50),
+    ExerciseName varchar(100) not null,
+    foreign key(ProgramName) references Program(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(ExerciseName) references Exercise(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(ProgramName, ExerciseName));
+
+create table IF NOT EXISTS Sport_Tools(
+	`Name` varchar(100) not null primary key,
+    Amount int,
+    urlImage varchar(2000) );
+
+create table IF NOT EXISTS Profession(
+	`Name` varchar(100) NOT NULL, 
+    primary key(`Name`)
+);
+create table IF NOT EXISTS Lesson(
+	`Name` varchar(250),
+    ProfessionName varchar(100) ,
+    Price float,
+    StartDate time,
+    EndDate time,
+    primary key(`Name`),  
+    foreign key(ProfessionName) references Profession(`Name`) ON DELETE SET NULL ON UPDATE CASCADE);
+
+
+create table IF NOT EXISTS Work_Time(
+	`Day` varchar(10) not null ,
+    StartTime time ,
+    EndTime time ,
+	primary key(`Day`,StartTime,EndTime)
+);
+   
+
+create table IF NOT EXISTS Section(
+	Room int unsigned NOT NULL,
+	LessonName varchar(250) not null, 
+    Quota int, 
+    -- UNIQUE INDEX (TrainerID,`Day`, StartTime,EndTime),
+    foreign key(LessonName) references Lesson(`Name`) ON DELETE CASCADE ON UPDATE CASCADE, 
+    primary key( Room, LessonName )
+    );
+create table IF NOT EXISTS work_in(
+	TrainerID varchar(50),
+	`Day` varchar(10) not null ,
+    StartTime time ,
+    EndTime time ,
+    SectionRoom int unsigned,
+    LessonName varchar(250) not null,
+	foreign key(`Day`, StartTime,EndTime) references Work_Time(`Day`, StartTime,EndTime) ON DELETE CASCADE ON UPDATE CASCADE,
+	foreign key(TrainerID) references Trainer(UsernameID) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(SectionRoom, LessonName) references Section(Room, LessonName) ON DELETE CASCADE ON UPDATE CASCADE,
+	primary key(TrainerID,`Day`,StartTime,EndTime )
+);
+  
+create table IF NOT EXISTS Purchase(
+	CustomerID varchar(50) not null, 
+    SectionRoom int unsigned not null,
+    LessonName varchar(250),
+    `Date` datetime default current_timestamp,
+    foreign key(CustomerID) references Customer(UsernameID) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(SectionRoom, LessonName) references Section(Room, LessonName) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(CustomerID, SectionRoom, LessonName)
+    );
+
+create table IF NOT EXISTS Physical_Ailment(
+	`Name` varchar(100) not null primary key
+    );
+
+create table IF NOT EXISTS Not_Fit(
+	PyhsicalAilmentName varchar(100) not null,
+    ProgramName varchar(50),
+    foreign key(PyhsicalAilmentName) references Physical_Ailment(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(ProgramName) references Program(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(PyhsicalAilmentName, ProgramName)
+    );
+    
+create table IF NOT EXISTS Used_In(
+	SportToolsName varchar(100) not null,
+    LessonName varchar(250) not null,
+    Quantity int,
+    foreign key(SportToolsName) references Sport_Tools(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(LessonName) references Lesson(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(SportToolsName, LessonName));
+
+     
+
+create table IF NOT EXISTS Be_Profession(
+	ProfessionName varchar(100) not null,
+    TrainerID varchar(50 ) not null,
+    foreign key(ProfessionName) references Profession(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(TrainerID) references Trainer(UsernameID) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(ProfessionName, TrainerID)
+    );
+
+create table IF NOT EXISTS Has(
+	CustomerID varchar(50) not null,
+    PyhsicalAilmentName varchar(100) not null,
+    foreign key(CustomerID) references Customer(UsernameID) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(PyhsicalAilmentName) references Physical_Ailment(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+	primary key (CustomerID , PyhsicalAilmentName)
+    );
+    
+        
+create table IF NOT EXISTS Asked_For(
+	CustomerID varchar(50) not null,
+    ProgramName varchar(50), 
+    foreign key(CustomerID) references Customer(UsernameID) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(ProgramName) references Program(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(CustomerID, ProgramName));
+    
+create table IF NOT EXISTS Make_With(
+	SportToolsName varchar(100) not null,
+    ExerciseName varchar(100) not null,
+    foreign key(SportToolsName) references Sport_Tools(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(ExerciseName) references Exercise(`Name`) ON DELETE CASCADE ON UPDATE CASCADE,
+    primary key(SportToolsName, ExerciseName));  
+ 
+ 
+create table IF NOT EXISTS log(
+	ID int NOT NULL AUTO_INCREMENT,
+    UsernameID varchar(50) NOT NULL,
+    Description varchar(300),
+    PRIMARY KEY (ID),
+    foreign key(UsernameID) references System_user(UsernameID) on delete cascade on update cascade
+);
+
+
+
+ 
+DELIMITER $$
+
+   
+create trigger insertTrainerTrigger before insert on trainer
+   for each row
+	   begin
+		   insert into system_user(UsernameID) values (new.UsernameID);
+	   end$$
+        
+       
+create trigger insertCustomerTrigger before insert on customer
+   for each row
+	   begin
+		   insert into system_user(UsernameID) values (new.UsernameID);
+	   end$$
+ 
+
+create trigger deleteCustomerTrigger after delete on customer
+	for each row
+		begin
+			delete from system_user where system_user.UsernameID = old.UsernameID;
+		end$$
+        
+create trigger deleteTrainerTrigger after delete on trainer
+	for each row
+		begin
+			delete from system_user where system_user.UsernameID = old.UsernameID;
+		end$$
+        
+CREATE EVENT checkCreditCardExpireDate
+  ON SCHEDULE
+    EVERY 1 DAY 
+    STARTS CURRENT_DATE
+  DO
+    BEGIN
+        UPDATE system_user, customer
+        SET system_user.EndDate = CURRENT_TIMESTAMP
+		WHERE system_user.UsernameID = customer.UsernameID and customer.CreditCardExpireDate <= CURRENT_DATE;
+    END $$
+    
+
+DELIMITER ;
+
+
+DELIMITER $$
+
+-- For Statistic information
+
+CREATE INDEX name_price_index ON lesson (`Name`, Price);
+   
+set GLOBAL event_scheduler = ON; 

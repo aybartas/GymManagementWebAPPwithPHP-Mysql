@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f21a7629-64c6-4cf7-a872-3634ebf72517" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="gym_management@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="gym_management@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="gym_management@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gym_management: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="gym_management@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gym_management: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="618bb77c-4d01-44c3-85b5-941b50607d8f" name="localhost" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1VfZF92RWGY5EzlWtBcVudazUCk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="azure&#10;mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.update_user_account.php">
+    <configuration name="header.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ilkdeneme/header.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="join_lesson.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ilkdeneme/user_panel/join_lesson.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="update_user_account.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ilkdeneme/user_panel/update_user_account.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="buy_lesson.inc.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/user_panel/includes/buy_lesson.inc.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="dbh.inc.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/includes/dbh.inc.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed (1)" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" nameIsGenerated="true" server_name="localhost">
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" nameIsGenerated="true" server_name="localhost">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.header.php" />
+      <item itemvalue="JavaScript Debug.join_lesson.php" />
+      <item itemvalue="JavaScript Debug.update_user_account.php" />
+      <item itemvalue="PHP Script.dbh.inc.php" />
+      <item itemvalue="PHP Script.buy_lesson.inc.php" />
+      <item itemvalue="PHP Web Page.Unnamed" />
+      <item itemvalue="PHP Web Page.Unnamed (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.update_user_account.php" />
+        <item itemvalue="PHP Script.buy_lesson.inc.php" />
+        <item itemvalue="JavaScript Debug.join_lesson.php" />
+        <item itemvalue="JavaScript Debug.header.php" />
+        <item itemvalue="PHP Script.dbh.inc.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f21a7629-64c6-4cf7-a872-3634ebf72517" name="Default Changelist" comment="" />
+      <created>1577646003260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577646003260</updated>
+      <workItem from="1577646004568" duration="5446000" />
+      <workItem from="1577723026962" duration="7872000" />
+      <workItem from="1577787941063" duration="5264000" />
+      <workItem from="1577890815528" duration="601000" />
+      <workItem from="1577995906557" duration="19000" />
+      <workItem from="1577995936994" duration="5153000" />
+      <workItem from="1578048492919" duration="6066000" />
+      <workItem from="1578126479736" duration="5248000" />
+      <workItem from="1578139047015" duration="12008000" />
+      <workItem from="1578233112983" duration="15110000" />
+      <workItem from="1578301875893" duration="15557000" />
+      <workItem from="1578417767309" duration="5273000" />
+      <workItem from="1578455122099" duration="2687000" />
+      <workItem from="1578498648398" duration="12230000" />
+      <workItem from="1578736776276" duration="10887000" />
+      <workItem from="1578819006578" duration="17559000" />
+      <workItem from="1578922008127" duration="2355000" />
+      <workItem from="1578940067770" duration="9442000" />
+      <workItem from="1578965010857" duration="17000" />
+      <workItem from="1579010580381" duration="7230000" />
+      <workItem from="1579033414330" duration="3485000" />
+      <workItem from="1579039061303" duration="2968000" />
+      <workItem from="1579050821942" duration="2585000" />
+      <workItem from="1579083941564" duration="18570000" />
+      <workItem from="1579167830066" duration="1884000" />
+      <workItem from="1579171320540" duration="6305000" />
+      <workItem from="1579179975227" duration="9223000" />
+      <workItem from="1579191789154" duration="7286000" />
+      <workItem from="1579200515135" duration="4273000" />
+      <workItem from="1579208044279" duration="1866000" />
+      <workItem from="1579266843035" duration="19631000" />
+      <workItem from="1579299650038" duration="7594000" />
+      <workItem from="1579333054963" duration="13546000" />
+      <workItem from="1579442186032" duration="624000" />
+      <workItem from="1579898211460" duration="1813000" />
+      <workItem from="1579956294994" duration="18680000" />
+      <workItem from="1579991077735" duration="7710000" />
+      <workItem from="1580101419443" duration="640000" />
+      <workItem from="1580117242829" duration="2360000" />
+      <workItem from="1580128754295" duration="385000" />
+      <workItem from="1580160378850" duration="14034000" />
+      <workItem from="1580220553948" duration="607000" />
+      <workItem from="1580279125145" duration="1051000" />
+      <workItem from="1580326375289" duration="46554000" />
+      <workItem from="1580397232539" duration="2539000" />
+      <workItem from="1580404233518" duration="34364000" />
+      <workItem from="1580457791058" duration="2339000" />
+      <workItem from="1580465349622" duration="1634000" />
+      <workItem from="1580470441427" duration="1153000" />
+      <workItem from="1580474758769" duration="2828000" />
+      <workItem from="1580478134040" duration="618000" />
+      <workItem from="1580545364724" duration="43363000" />
+      <workItem from="1580604513173" duration="31746000" />
+      <workItem from="1580665093328" duration="3351000" />
+      <workItem from="1580668547993" duration="40059000" />
+      <workItem from="1580712677729" duration="909000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="144" key="#Deployment" timestamp="1577652010999">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="144" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1577652010999" />
+    <state x="722" y="72" key="#Inspections" timestamp="1577794500508">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="72" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1577794500508" />
+    <state x="860" y="4" key="#PHP" timestamp="1577646489960">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="860" y="4" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1577646489960" />
+    <state x="361" y="72" key="#SQL_Dialects" timestamp="1577793752151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1577793752151" />
+    <state x="686" y="120" key="#Servers" timestamp="1577651934085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="686" y="120" key="#Servers/0.0.1536.824@0.0.1536.824" timestamp="1577651934085" />
+    <state x="202" y="110" width="1089" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580671296934">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="202" y="110" width="1089" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1580671296934" />
+    <state x="832" y="141" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577995922097">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="832" y="141" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1577995922097" />
+    <state x="883" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578826879720">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="883" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578826879720" />
+    <state x="860" y="176" key="FileChooserDialogImpl" timestamp="1580605308296">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="860" y="176" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580605308296" />
+    <state width="1493" height="97" key="GridCell.Tab.0.bottom" timestamp="1580712616766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="97" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580712616766" />
+    <state width="1493" height="97" key="GridCell.Tab.0.center" timestamp="1580712616766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="97" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580712616766" />
+    <state width="1493" height="97" key="GridCell.Tab.0.left" timestamp="1580712616766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="97" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580712616766" />
+    <state width="1493" height="97" key="GridCell.Tab.0.right" timestamp="1580712616766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="97" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580712616766" />
+    <state width="1493" height="26" key="GridCell.Tab.1.bottom" timestamp="1580668528677">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="26" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580668528677" />
+    <state width="1493" height="26" key="GridCell.Tab.1.center" timestamp="1580668528677">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="26" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580668528677" />
+    <state width="1493" height="26" key="GridCell.Tab.1.left" timestamp="1580668528677">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="26" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580668528677" />
+    <state width="1493" height="26" key="GridCell.Tab.1.right" timestamp="1580668528677">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="26" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580668528677" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1578853899612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578853899612" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1578853899612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578853899612" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1578853899612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578853899612" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1578853899612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578853899612" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1580671110495">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1580671110495" />
+    <state x="988" y="337" key="NewPhpFileDialog" timestamp="1580711707224">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="988" y="337" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1580711707224" />
+    <state x="553" y="60" key="SettingsEditor" timestamp="1579038413269">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="553" y="60" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579038413269" />
+    <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog" timestamp="1578328354425">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1578328354425" />
+    <state x="907" y="167" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578139952184">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="907" y="167" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.824@0.0.1536.824" timestamp="1578139952184" />
+    <state x="635" y="160" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1580666370964">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="635" y="160" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1580666370964" />
+    <state x="849" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1580712678171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="849" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580712678171" />
+    <state x="960" y="208" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1577652012741">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="960" y="208" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1536.824@0.0.1536.824" timestamp="1577652012741" />
+    <state x="809" y="189" key="run.anything.popup" timestamp="1580661492073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="809" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1580661492073" />
+    <state x="815" y="210" width="672" height="613" key="search.everywhere.popup" timestamp="1580427820471">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="815" y="210" width="672" height="613" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580427820471" />
+    <state x="875" y="325" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580342486316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="875" y="325" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1580342486316" />
+  </component>
+</project>

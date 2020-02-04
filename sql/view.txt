@@ -1,0 +1,5 @@
+CREATE VIEW Purchase_Information AS select  work_in.LessonName as LN, system_user.Name as systemusername, Surname, `Day`  as day,StartTime,EndTime,Price,Room, TrainerID 
+                            from system_user, work_in ,section,lesson
+                where work_in.LessonName= section.LessonName and work_in.SectionRoom = Room  
+                  and  work_in.TrainerID = system_user.UsernameID and lesson.Name = section.LessonName ;
+                   
